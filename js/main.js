@@ -153,12 +153,12 @@
     $('.menu-item').removeClass('active');
   });
   //On Click Close Blog Post And Project Details
-  $('#close-pop').on('click', function () {
+  /*$('#close-pop').on('click', function () {
     $('.content-blocks.pop').removeClass('showx');
     $('.sidebar-menu').removeClass('hidex');
     $('.inline-menu-container').addClass('showx');
     $('.content-blocks.pop section').empty();
-  });
+  });*/
 
   $('.menu-block, .menu-item, #close').on('click', function () {
     $('.content-blocks').animate({
