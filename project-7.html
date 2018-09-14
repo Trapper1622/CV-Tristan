@@ -1,0 +1,50 @@
+<div class="block-content">
+  <div class="project-head">
+    <h1 class="block-title">Site internet pour une association artistique "L'arthautek"</h1>
+    <div class="tags">
+      <span>Categorie : </span> Wordpress</div>
+    <div class="tags">
+      <span>Client : </span> Arthautek</div>
+    <div class="tags">
+      <span>Création : </span> septembre 2018</div>
+  </div>
+  <p class="project-description">Site internet crée pour l'association L'arthautek.<br>
+    La présidente de l'association m'a contacté pour crée leur site internet, que j'ai fait avec le CMS wordpress, car elle souhaitez un site facile d'utilisation et rapidement.<br>
+  <div class="project-media row">
+    <div class="col-md-6">
+      <img src="images/portfolio/masonry/arthautek-003.jpg" alt="" />
+    </div>
+    <div class="col-md-6">
+      <img src="images/portfolio/masonry/arthautek-001.jpg" alt="" />
+      <img src="images/portfolio/masonry/arthautek-002.jpg" alt="" />
+    </div>
+  </div>
+  <div class="project-nav text-center">
+    <span class="float-left">
+      <a class="open-project" href="project-6.html">&leftarrow; Projet précédent</a>
+    </span>
+    <span class="float-right">
+      <a class="open-project" href="project-1.html">Prochain projet &rightarrow; </a>
+    </span>
+  </div>
+</div>
+<div class="row text-center">
+  <div class="col-md-12 btn-email">
+    <a class="btn lowercase">tristan.broch@gmail.com</a>
+  </div>
+</div>
+
+<script>
+  $('.open-project').on('click', function() {
+    var projectUrl = $(this).attr("href");
+    $('.inline-menu-container').removeClass('showx');
+    $('.content-blocks.pop').addClass('showx');
+    $('.content-blocks.pop section').load(projectUrl)
+    return false;
+  });
+  $('#close-project').on('click', function() {
+    $('.content-blocks.pop').removeClass('showx');
+    $('.inline-menu-container').addClass('showx');
+    $('.content-blocks.pop section').empty();
+  });
+</script>

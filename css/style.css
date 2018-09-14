@@ -1477,6 +1477,7 @@ h2.menu-item:after {
 
 .project-media img {
   margin-bottom: 30px;
+  border: 2px solid #666;
 }
 
 .video-container {
